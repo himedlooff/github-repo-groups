@@ -1,0 +1,24 @@
+{
+    "repos": [
+        {
+            "name": "Capital Framework",
+            "url": "https://github.com/cfpb/capital-framework"
+        },
+        {
+            "name": "cf-buttons",
+            "url": "https://github.com/cfpb/cf-buttons"
+        },
+        {
+            "name": "cf-typography",
+            "url": "https://github.com/cfpb/cf-typography"
+        },
+        {
+            "name": "cf-forms",
+            "url": "https://github.com/cfpb/cf-forms"
+        },
+        {
+            "name": "cf-grid",
+            "url": "https://github.com/cfpb/cf-grid"
+        }
+    ]
+}

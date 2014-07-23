@@ -1,0 +1,63 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" href="main.min.css">
+        <script src="angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+
+    <body ng-app>
+
+        <br>
+
+        <header class="header" role="banner">
+            <div class="wrapper">
+                <h1 class="fancy-slug">
+                    <span class="fancy-slug_text">
+                        <span class="fancy-slug_ribbon-left"></span>
+                        GitHub Linked Repos
+                        <span class="fancy-slug_ribbon-right"></span>
+                    </span>
+                </h1>
+            </div>
+        </header>
+
+        <main class="content content__1-3" id="main" role="main" ng-controller="RepoListCtrl">
+            <div class="wrapper content_wrapper">
+
+                <div class="content_sidebar">
+                    <div class="form-group">
+                        <label class="form-label-header" for="">Search:</label>
+                        <div class="form-group_item">
+                            <input type="text" ng-model="repoListSearch"></input>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="content_main" style="min-height:80%;">
+                    <div class="line-container line-container__no-top">
+                        <div class="line-container_body">
+                            <h2 class="header-slug">
+                                <span class="header-slug_inner">
+                                    Repositories
+                                </span>
+                            </h2>
+                        </div>
+                        <ul>
+                            <li class="list_item"
+                                ng-repeat="repo in repoList | filter:{name: repoListSearch}">
+                                <a class="list_link"
+                                   href="{{ repo.url }}">
+                                    {{ repo.name }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+    </body>
+
+</html>
