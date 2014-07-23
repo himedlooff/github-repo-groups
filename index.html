@@ -26,36 +26,47 @@
             <div class="wrapper content_wrapper">
 
                 <div class="content_sidebar">
+
                     <div class="form-group">
-                        <label class="form-label-header" for="">Search:</label>
+                        <label class="form-label-header" for="">Filter:</label>
                         <div class="form-group_item">
                             <input type="text" ng-model="search"></input>
                         </div>
                     </div>
+
+                    <div class="summary"
+                         ng-hide="search == ''" ng-show="search != ''">
+                        <ul class="list__unstyled">
+                            <li class="list_item"
+                                ng-repeat="repo in repoList | filter:{name: search}">
+                                <a class="list_link"
+                                   href="{{ repo.html_url }}">
+                                    {{ repo.name }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="form-group"
+                         ng-hide="search != ''" ng-show="search == ''">
+                        <h2 class="form-label-header">All repositories</h2>
+                        <ul class="list__unstyled">
+                            <li class="list_item"
+                                ng-repeat="repo in repoList">
+                                <a class="list_link"
+                                   href="{{ repo.html_url }}">
+                                    {{ repo.name }}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
 
                 <section class="content_main" style="min-height:80%;">
 
-                    <div class="summary"
-                         ng-hide="search == ''" ng-show="search != ''">
-                        <h2 class="summary_header">Search results for: <em>{{ search }}</em></h2>
-                        <div class="summary_text"
-                             ng-repeat="set in setList">
-                            <ul class="list__unstyled">
-                                <li class="list_item"
-                                    ng-repeat="repo in set.repos | filter:{name: search}">
-                                    <a class="list_link"
-                                       href="{{ repo.url }}">
-                                        {{ repo.name }}
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
                     <div class="demo-cols">
                         <div class="demo-col-6 demo-spaced"
-                             ng-hide="search != ''" ng-show="search == ''"
                              ng-repeat="set in setList">
 
                             <div class="summary">
