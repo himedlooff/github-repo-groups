@@ -1,27 +1,19 @@
 {
     "sets": [
         {
-            "name": "Capital Framework",
+            "name": "eRegulations",
             "repos": [
                 {
-                    "name": "capital-framework",
-                    "url": "https://github.com/cfpb/capital-framework"
+                    "name": "regulations-parser",
+                    "url": "https://github.com/cfpb/regulations-parser"
                 },
                 {
-                    "name": "cf-buttons",
-                    "url": "https://github.com/cfpb/cf-buttons"
+                    "name": "regulations-core",
+                    "url": "https://github.com/eregs/regulations-core"
                 },
                 {
-                    "name": "cf-typography",
-                    "url": "https://github.com/cfpb/cf-typography"
-                },
-                {
-                    "name": "cf-forms",
-                    "url": "https://github.com/cfpb/cf-forms"
-                },
-                {
-                    "name": "cf-grid",
-                    "url": "https://github.com/cfpb/cf-grid"
+                    "name": "regulations-site",
+                    "url": "https://github.com/eregs/regulations-site"
                 }
             ]
         },
@@ -35,6 +27,55 @@
                 {
                     "name": "unformat-usd",
                     "url": "https://github.com/cfpb/unformat-usd"
+                }
+            ]
+        },
+        {
+            "name": "Capital Framework",
+            "repos": [
+                {
+                    "name": "capital-framework",
+                    "url": "https://github.com/cfpb/capital-framework"
+                },
+                {
+                    "name": "cf-buttons",
+                    "url": "https://github.com/cfpb/cf-buttons"
+                },
+                {
+                    "name": "cf-colors",
+                    "url": "https://github.com/cfpb/cf-colors"
+                },
+                {
+                    "name": "cf-expandables",
+                    "url": "https://github.com/cfpb/cf-expandables"
+                },
+                {
+                    "name": "cf-forms",
+                    "url": "https://github.com/cfpb/cf-forms"
+                },
+                {
+                    "name": "cf-grid",
+                    "url": "https://github.com/cfpb/cf-grid"
+                },
+                {
+                    "name": "cf-icons",
+                    "url": "https://github.com/cfpb/cf-icons"
+                },
+                {
+                    "name": "cf-pagination",
+                    "url": "https://github.com/cfpb/cf-pagination"
+                },
+                {
+                    "name": "cf-typography",
+                    "url": "https://github.com/cfpb/cf-typography"
+                },
+                {
+                    "name": "cf-cf-component-demo",
+                    "url": "https://github.com/cfpb/cf-cf-component-demo"
+                },
+                {
+                    "name": "cf-cf-grunt-config",
+                    "url": "https://github.com/cfpb/cf-cf-grunt-config"
                 }
             ]
         }
