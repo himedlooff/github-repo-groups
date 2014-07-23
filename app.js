@@ -1,8 +1,9 @@
 function RepoListCtrl($scope, $filter, $http) {
-  $scope.repoList = [];
+  $scope.setList = [];
+  $scope.search = '';
   $http.get('/repos.json').
     success(function(data){
-      $scope.repoList = data.repos;
+      $scope.setList = data.sets;
     }).
     error(function(){
       alert('Error');

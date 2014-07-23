@@ -1,24 +1,42 @@
 {
-    "repos": [
+    "sets": [
         {
             "name": "Capital Framework",
-            "url": "https://github.com/cfpb/capital-framework"
+            "repos": [
+                {
+                    "name": "Capital Framework",
+                    "url": "https://github.com/cfpb/capital-framework"
+                },
+                {
+                    "name": "cf-buttons",
+                    "url": "https://github.com/cfpb/cf-buttons"
+                },
+                {
+                    "name": "cf-typography",
+                    "url": "https://github.com/cfpb/cf-typography"
+                },
+                {
+                    "name": "cf-forms",
+                    "url": "https://github.com/cfpb/cf-forms"
+                },
+                {
+                    "name": "cf-grid",
+                    "url": "https://github.com/cfpb/cf-grid"
+                }
+            ]
         },
         {
-            "name": "cf-buttons",
-            "url": "https://github.com/cfpb/cf-buttons"
-        },
-        {
-            "name": "cf-typography",
-            "url": "https://github.com/cfpb/cf-typography"
-        },
-        {
-            "name": "cf-forms",
-            "url": "https://github.com/cfpb/cf-forms"
-        },
-        {
-            "name": "cf-grid",
-            "url": "https://github.com/cfpb/cf-grid"
+            "name": "Financial NPM modules",
+            "repos": [
+                {
+                    "name": "is-money-usd",
+                    "url": "https://github.com/cfpb/is-money-usd"
+                },
+                {
+                    "name": "unformat-usd",
+                    "url": "https://github.com/cfpb/unformat-usd"
+                }
+            ]
         }
     ]
 }
