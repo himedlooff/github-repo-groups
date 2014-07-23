@@ -28,13 +28,15 @@
                 <div class="content_sidebar">
 
                     <div class="form-group">
-                        <label class="form-label-header" for="">Filter:</label>
+                        <label class="form-label-header" for="">Filter</label>
                         <div class="form-group_item">
-                            <input type="text" ng-model="search"></input>
+                            <input type="text"
+                                   placeholder="type a repo name"
+                                   ng-model="search"></input>
                         </div>
                     </div>
 
-                    <div class="summary"
+                    <div class="form-group"
                          ng-hide="search == ''" ng-show="search != ''">
                         <ul class="list__unstyled">
                             <li class="list_item"
@@ -63,7 +65,7 @@
 
                 </div>
 
-                <section class="content_main" style="min-height:80%;">
+                <section class="content_main">
 
                     <div class="demo-cols">
                         <div class="demo-col-6 demo-spaced"
