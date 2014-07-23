@@ -6,7 +6,6 @@ function RepoListCtrl($scope, $filter, $http) {
   $http.get('repos.json').
     success(function(data){
       $scope.setList = data.sets;
-      console.log(data.sets);
     }).
     error(function(){
       alert('Error');
@@ -15,7 +14,6 @@ function RepoListCtrl($scope, $filter, $http) {
   $http.get('https://api.github.com/orgs/cfpb/repos?per_page=100').
     success(function(data){
       $scope.repoList = data;
-      console.log(data);
     }).
     error(function(){
       alert('Error');
