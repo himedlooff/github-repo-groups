@@ -70,12 +70,12 @@
                     "url": "https://github.com/cfpb/cf-typography"
                 },
                 {
-                    "name": "cf-cf-component-demo",
-                    "url": "https://github.com/cfpb/cf-cf-component-demo"
+                    "name": "cf-component-demo",
+                    "url": "https://github.com/cfpb/cf-component-demo"
                 },
                 {
-                    "name": "cf-cf-grunt-config",
-                    "url": "https://github.com/cfpb/cf-cf-grunt-config"
+                    "name": "cf-grunt-config",
+                    "url": "https://github.com/cfpb/cf-grunt-config"
                 }
             ]
         }
